@@ -1,0 +1,318 @@
+*{
+padding: 0px;
+margin:0px;
+box-sizing: border-box;
+}
+ul,li,ol{
+    list-style:none;
+}
+html,body{
+    width: 100%;
+    background: #f5f8f9;
+}
+header{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 100px;
+    align-items: center;
+    background: white;
+}
+.header_nav{
+    display: flex;
+    align-items: center;
+}
+.header_icon{
+    height: 20px;
+    width: 80px;
+    margin-right: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+.header_icon>div{
+    
+    width: 20px;
+    height: 20px;
+    position: relative;
+}
+
+.logo{
+    width: 120px;
+    background: red;
+    color: white;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    letter-spacing:2px;
+    font-size: 18px;
+    font-weight: 600;
+}
+.logout{
+   width: 120px;
+   height: 40px;
+   line-height: 40px;
+   text-align: center;
+   background: red;
+   color: white;
+   font-weight: 600;
+   font-size: 18px;
+}
+
+
+/* mian */
+
+main{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:  20px;
+}
+.main_top{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.title_box{
+    width: 40%;
+}
+.title{
+    font-size: 24px;
+    font-weight: 500;
+    color: #222222;
+}
+.small_titel{
+    font-size: 14px;
+    color: #999999;
+}
+.nav{
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+}
+.nav>div{
+    height: 28px;
+    line-height: 28px;
+    font-weight: 800;
+    padding: 0px 2px;
+    cursor: pointer;
+    position: relative;
+}
+
+.nav>div:hover{
+    
+    border-bottom: 2px solid #202124;
+}
+.slider_box{
+    margin-top: 50px;
+    height: 350px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* 轮播图样式 */
+.box{
+ width: 48%;
+ padding: 10px;
+ background: white;
+}
+.silder{
+    height: 350px;
+    overflow: hidden; 
+    position: relative;
+}
+#slider{
+    
+    width: 100%;
+    display: flex;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+#next,#prev{
+    position: absolute;
+    top:50%;
+    transform: translate(0,-50%);
+    background: white;
+    opacity: 0;
+    transition: opacity .45s;
+}
+#next{
+    right: 0px;
+}
+#prev{
+    left: 0px;
+}
+
+/* 按钮样式 */
+.icon{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 15px;
+    position: absolute;
+    left: 50%;
+    bottom: 12px;
+    transform: translate(-50%,0);
+}
+.icon > li{
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background: white;
+    margin: 5px;
+}
+
+
+/* icon激活 */
+.i_active{
+    transform: scale(1.2);
+}
+/* 左边模块 */
+.left_view{
+    width: 48%;
+    background: white;
+}
+
+.view_top{
+    width: 100%;
+    height: 150px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   border-bottom:  1px solid #666666;
+}
+.view_top div:first-child{
+   font-size: 24px;
+   font-weight: 900;
+   margin: 20px;
+}
+.view_top div:last-child{
+     margin: 20px;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 2px  10px;
+    line-height: 30px;
+    border: 2px solid #999999;
+}
+
+/* 表 */
+.table{
+    width: 100%;
+    height: calc(100%-100px);
+    
+}
+.table>div:first-child{
+    font-weight: bold;
+    font-size: 24px;
+}
+.table>div{
+    font-size: 18px;
+    
+}
+.title{
+    display: flex;
+    height: 50px;
+    line-height: 50px;
+    width: 100%;
+    text-align: center;
+}
+.time{
+    width: 20%;
+}
+.username{
+    text-align: left;
+    width: 60%;
+}
+.status{
+    width: 20%;
+}
+.status>span{
+    cursor: pointer;
+    color: white;
+    padding: 10px;
+    background: #5dd054;
+}
+
+/* 数据可视化 */
+.data_show{
+    padding-top: 30px;
+    margin-top: 30px;
+    width: 100%;
+    height: 600px;
+    background: white;
+}
+.bp_box{
+    margin-top: 20px;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: space-between;
+}
+.bar,.pie{
+    width: 45%;
+}
+
+
+/* 底部 */
+
+footer{
+    margin-top: 50px;
+    width: 100%;
+    height: 360px;
+    background: #202124;
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 100px;
+}
+footer .logo{
+    
+    margin-left: 200px;
+}
+.footer_tag{
+    width: 80%;
+    display: flex;
+    margin-left: 20px;
+    justify-content: space-around;
+}
+.tag{
+    width: 100px;
+    
+}
+#tag_icon{
+    cursor: pointer;
+    display: inline-block;
+    margin-top: 10px;
+    height: 25px;
+    padding: 5px;
+    
+}
+#tag_icon:hover{
+   border-bottom: 1px solid white;
+}
+.tag_icon_active{
+    border-bottom: 1px solid white;
+}
+.tag>#tag_icon:first-child{
+    margin-top: 0px;
+}
+
+
+
+
+/* 图片自适应 */
+.auto_img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+}
+
+
+/* 激活样式 */
+
+.active{
+    border-bottom: 2px solid #202124;
+}

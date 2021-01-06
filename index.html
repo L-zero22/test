@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+    <script src="./echarts.min.js"></script>
+    <script src="./ajax.js"></script>
+</head> 
+<body>
+    <header>
+        <!-- logo -->
+        <div class="logo">
+            LOGO
+        </div>
+        <!-- header左边nav -->
+        <div class="header_nav">
+            <!-- icon -->
+            <div class="header_icon">
+                <div><img class="auto_img" src="./images/Gear-1.png" alt=""></div>
+                <div><img class="auto_img" src="./images/bell-solid.png" alt=""></div>
+            </div>
+            <div class="logout">
+                Log Out
+            </div>
+        </div>
+    </header>
+    <!-- header --end -->
+    <main>
+        <div class="main_top">
+            <!-- 标题 -->
+            <div class="title_box">
+                <div class="title">
+                    Audience Overview
+                </div>
+                <div class="small_titel">
+                    Roseviller,CA
+                </div>
+            </div>
+            <!-- 导航标签 -->
+            <div class="nav" id="nav">
+                <div class="active">DASHBOARD</div>
+                <div>PROJECTS</div>
+                <div>CALENDAR</div>
+                <div>MAILBOX</div>
+                <div>SETTINGS</div>
+            </div>
+        </div>
+        
+        <div class="slider_box">
+            <!-- 轮播图 -->
+            <div class="box">
+            <div class="silder" id='box'>
+                <div id="slider">
+                    <img class="auto_img" src="./images/1.jpg" alt="">
+                    <img class="auto_img" src="./images/2.jpg" alt="">
+                    <img class="auto_img" src="./images/4.jpg" alt="">
+                </div>
+                <div id="next"><img class="auto_img" src="./images/right.png" alt=""></div>
+                <div id="prev"><img class="auto_img" src="./images/left.png" alt=""></div>
+                <ul class="icon" id='icon'>
+                </ul>
+            </div>
+        </div>
+
+            <!-- 左边模块 -->
+            <div class="left_view">
+                <div class="view_top">
+                    <div>Support Requests</div>
+                    <div>View All</div>
+                </div>
+                <!-- 表 -->
+                <div class="table">
+                    <div class="title">
+                        <div class="time">TIME</div>
+                        <div class="username">USER NAME</div>
+                        <div class="status">STATYS</div>
+                    </div>
+                    <div class="title">
+                        <div class="time">9:45pm</div>
+                        <div class="username">info@design.com</div>
+                        <div class="status"><span>Solved</span></div>
+                    </div>
+                    <div class="title">
+                        <div class="time">9:45pm</div>
+                        <div class="username">info@design.com</div>
+                        <div class="status"><span>Solved</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 曲线数据可视化 -->
+        <div class="data_show" id="data_show">
+        </div>
+        <!-- 饼状跟柱状数据可视化 -->
+        <div class="bp_box">
+            <!-- 柱状图 -->
+            <div class="bar" id="bar">
+
+            </div>
+            <!-- 饼图 -->
+            <div class="pie" id="pie">
+
+            </div>
+        </div>
+        
+    </main>
+
+
+    <!-- footer -->
+    <footer>
+        <div class="logo">
+            LOGO
+        </div>
+        <div class="footer_tag">
+            <div class="tag">
+                <span id="tag_icon">NEWS</span>
+                <span id="tag_icon">CHANNELS</span>
+                <span id="tag_icon">OVERVIEW</span>
+                <span id="tag_icon">TIMELINE</span>
+            </div>
+            <div class="tag">
+                <div id="tag_icon">NEWS</div>
+                <div id="tag_icon">CHANNELS</div>
+                <div id="tag_icon">OVERVIEW</div>
+                <div id="tag_icon">TIMELINE</div>
+            </div>
+            <div class="tag">
+                <div id="tag_icon">NEWS</div>
+                <div id="tag_icon">CHANNELS</div>
+                <div id="tag_icon">OVERVIEW</div>
+                <div id="tag_icon">TIMELINE</div>
+            </div>
+            <div class="tag">
+                <div id="tag_icon">NEWS</div>
+                <div id="tag_icon">CHANNELS</div>
+                <div id="tag_icon">OVERVIEW</div>
+                <div id="tag_icon">TIMELINE</div>
+            </div>
+            <div class="tag">
+                <div id="tag_icon">NEWS</div>
+                <div id="tag_icon">TIMELINE</div>
+            </div>
+        </div>
+    </footer>
+    <script src="./index.js"></script>
+</body>
+</html>
